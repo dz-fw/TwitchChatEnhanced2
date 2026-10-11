@@ -1,0 +1,10 @@
+{
+ "schemaVersion":1,
+ "id":"twitchchatenhanced",
+ "version":"2.0.0",
+ "name":"Twitch Chat Enhanced",
+ "description":"Twitch IRC chat in the normal Minecraft chat, with TLS and reconnect.",
+ "environment":"client",
+ "entrypoints":{"client":["com.twitchchatenhanced.TwitchChatEnhanced"]},
+ "depends":{"fabricloader":">=0.19.5","minecraft":"26.3","java":">=25","fabric-api":"*"}
+}

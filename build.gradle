@@ -1,0 +1,12 @@
+plugins { id 'net.fabricmc.fabric-loom' version '1.18-SNAPSHOT' }
+version = '2.0.0'
+group = 'com.twitchchatenhanced'
+base { archivesName = 'twitch-chat-enhanced' }
+repositories { mavenCentral() }
+dependencies {
+ minecraft 'com.mojang:minecraft:26.3'
+ modImplementation 'net.fabricmc:fabric-loader:0.19.5'
+ modImplementation 'net.fabricmc.fabric-api:fabric-api:0.161.0+26.3'
+}
+tasks.withType(JavaCompile).configureEach { options.release = 25 }
+java { toolchain.languageVersion = JavaLanguageVersion.of(25) }
