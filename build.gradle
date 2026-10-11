@@ -1,4 +1,7 @@
-plugins { id 'net.fabricmc.fabric-loom' version '1.18-SNAPSHOT' }
+plugins {
+    id 'fabric-loom' version '1.18-SNAPSHOT'
+    id 'java'
+}
 version = '2.0.0'
 group = 'com.twitchchatenhanced'
 base { archivesName = 'twitch-chat-enhanced' }
